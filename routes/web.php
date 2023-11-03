@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/books', 'App\Http\controllers\ControllerBaru@index');
+
+Route::resource('/posts', \App\Http\Controllers\PostController::class);
